@@ -39,15 +39,15 @@ a {
 }
 
 a:hover {
-    color: #04aa6d;
+    color: #663399;
 }
 
 h2 {
-    color: #04aa6d;
+    color: #663399;
 }
 
 .logo {
-    background-color: #04aa6d;
+    background-color: #663399;
     padding: 10px;
     border-radius: 10px;
 }
@@ -77,7 +77,7 @@ button {
 
 button:hover {
     color: white;
-    background-color: #04aa6d;
+    background-color: #663399;
     border: none;
 }
 
