@@ -15,30 +15,32 @@
 
 <div class="productList">
 
+{% for product in products %}
 <div class="product">
-     <img src="https://ir-3.ozone.ru/s3/multimedia-m/c1000/6818098054.jpg">
+    <img src="{{ product.image_url }}">
     <div>
-        <h2>Теннисная Сумка</h2>
-        <p>Теннисная Сумка – это очень удобная вещь для переноски ракеток, кросовок, мячей, полотенец и так далее.</p>
-    </div>
-        <div class="priceSection">
-        <h3>15 500 ₽</h3>
-        <button>Купить</button>
-    </div>
-</div>
-
-
-<div class="product">
-    <img src="https://ir-3.ozone.ru/s3/multimedia-d/c1000/6281000317.jpg">
-     <div>
-        <h2>Теннисная Ракетка</h2>
-        <p>Теннисная Ракетка — это главный инструмент для игры в теннис!
-
-Именно этой вещью отбиваются теннисные мячи.</p>
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
     </div>
     <div class="priceSection">
-        <h3>20 999 ₽</h3>
+        <h3>{{ product.price }} ₽</h3>
         <button>Купить</button>
     </div>
 </div>
+    {% endfor %}
+
+<!--<div class="product">-->
+<!--    <img src="https://ir-3.ozone.ru/s3/multimedia-d/c1000/6281000317.jpg">-->
+<!--     <div>-->
+<!--        <h2>Теннисная Ракетка</h2>-->
+<!--        <p>Теннисная Ракетка — это главный инструмент для игры в теннис!-->
+
+<!--Именно этой вещью отбиваются теннисные мячи.</p>-->
+<!--    </div>-->
+<!--    <div class="priceSection">-->
+<!--        <h3>20 999 ₽</h3>-->
+<!--        <button>Купить</button>-->
+<!--    </div>-->
+</div>
+
 </div>
