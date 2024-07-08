@@ -7,5 +7,18 @@ class Product(models.Model):
     price = models.IntegerField()
     image_url = models.CharField(max_length=256)
 
+    # Вес в граммах
+    weight = models.IntegerField(null=True, blank=True)
+
     def __str__(self):
         return f'{self.name}'
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    author = models.CharField(max_length=256)
+    rating = models.IntegerField()
+    text = models.TextField()
+
+    def __str__(self):
+        return f'{self.author}: {self.text[:100]}'

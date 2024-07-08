@@ -4,21 +4,21 @@
     font-family: Inter;
 }
 
-h1 {
+.logoText {
     color: white;
     padding: 0;
     margin: 0;
 }
 
-img {
-    max-width: 300px;
-    max-height: 300px;
+.productPreview {
+    max-width: 350px;
+    max-height: 450px;
 }
 
 .product {
     display: flex;
     margin-top: 20px;
-    border-radius: 10;
+    border-radius: 10px;
     padding: 10px;
     background-color: white;
     width: 60%;
@@ -31,18 +31,22 @@ img {
     justify-content: center;
 }
 
-a {
+.navlink {
     margin-right: 50px;
     text-decoration: none;
     color: black;
     font-size: 22px;
 }
 
-a:hover {
+.navlink:hover {
     color: #663399;
 }
 
-h2 {
+.textGreen {
+    color: #663399;
+}
+
+.textRed {
     color: #663399;
 }
 
@@ -82,7 +86,70 @@ button:hover {
 }
 
 .priceSection {
-    width: 300px;
+    min-width: 100px;
     text-align: center;
     margin-left: 20px;
+}
+
+
+.productCard {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.productInfo {
+    margin-top: 5%;
+}
+
+
+.productDetails {
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.productImage {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.charrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reviewHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.reviewHeader * {
+    margin: 0;
+}
+
+.createReviewForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.createReviewForm * {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.inputElement {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #a6a6a6;
 }
