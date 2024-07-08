@@ -10,6 +10,9 @@ class Product(models.Model):
     # Вес в граммах
     weight = models.IntegerField(null=True, blank=True)
 
+    # Модель
+    model = models.IntegerField(null=True, blank=True)
+
     def __str__(self):
         return f'{self.name}'
 
